@@ -24,7 +24,6 @@ function addData() {
 function getData() {
     let newData = JSON.parse(localStorage.getItem('person')) || []
     newData.forEach((el) => {
-        list.innerHTML += `<h1>${el.name}</h1> <br> <h2>${el.age}</h2> <img src="${el.img}" alt="">`
-        
+        list.innerHTML += `<h1>${el.name}</h1> <h2>${el.age}</h2> <img src="${el.img}" alt="">`
     });
 }
